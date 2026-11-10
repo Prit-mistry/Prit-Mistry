@@ -1,0 +1,115 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #243047;
+    background-color: #f3f6fb;
+}
+
+/* Header */
+header {
+    padding: 45px 20px;
+    text-align: center;
+    color: white;
+    background-color: #183153;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+header p {
+    margin: 8px 0 0;
+    color: #dce8f7;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    padding: 15px;
+    background-color: #24466f;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content and sections */
+main {
+    width:  min(900px, 92%);
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 22px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(20, 40, 70, 0.07);
+}
+
+h2 {
+    margin-top: 0;
+    color: #183153;
+    border-bottom: 2px solid #dce8f7;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #315b88;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+section a {
+    color: #175ca8;
+}
+
+.note {
+    color: #68758a;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    padding: 18px;
+    text-align: center;
+    color: white;
+    background-color: #183153;
+}
+
+/* Small-screen layout */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    section {
+        padding: 19px;
+    }
+}
